@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Stay update!</h1>
+            <p>join 60 000+ product manager receving monthly updates on.</p>
+            <li><img src="images/icon-list.svg" alt="">product discovery and building what amttters</li>
+            <li><img src="images/icon-list.svg" alt="">Measuring to ensure updates are a success</li>
+            <li><img src="images/icon-list.svg" alt="">And much more!</li>
+            <form action="">
+               
+                    <div class="inputfield">
+                      <label for="">Email:</label>
+                      <input type="email" id="Emailfield" onkeyup="validation()">
+                      <span id="text"></span>
+                    </div>
+                  
+                <button type="button" id="btn">Subscribe to my new selter</button>
+            </form>
+             
+        </div>
+        <div class="right"></div>
+    </div>
+<div class="output hidden">
+    <img src="images/icon-list.svg" alt="">
+    <h1>Thanks for<br>subscribing!</h1>
+    <p>A confirmation email has been sent to you satyabratasahoo137@gmail.com.Please open it and click the button inside to confirm your confirmation</p>
+    <button id="btn2">Dismiss message</button>
+</div>
+
+
+
+    <script>
+        var input = document.getElementById("Emailfield");
+        var text = document.getElementById("text");
+        var button = document.getElementById("btn");
+        var button2 = document.getElementById("btn2");
+        var container = document.querySelector('.container');
+        var thanku = document.querySelector('.output');
+
+
+       function validation(){
+        
+        if(!input.value.match((/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/))){
+          text.innerHTML="please enter a valid email";
+          text.classList.add("error");
+          return false;
+        }
+        text.innerHTML ="";
+        return true;
+       }
+       button.addEventListener('click',function(){
+       container.classList.add("hidden");
+       thanku.classList.remove("hidden");
+
+       });
+       button2.addEventListener('click',function(){
+       
+        thanku.classList.add("hidden");
+        container.classList.remove("hidden");
+       })
+
+
+       
+      </script>
+</body>
+</html>

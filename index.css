@@ -1,0 +1,95 @@
+:root{
+    --white:hsl(0, 0%, 100%);
+    --orange:hsl(4, 100%, 67%);
+    --gray:hsl(231, 7%, 60%);
+    --charcoalgray:hsl(235, 18%, 26%);
+    --DarkSlateGrey: hsl(234, 29%, 20%)
+}
+body{
+    background-color: var(--DarkSlateGrey);
+}
+.container{
+    height: auto;
+    width: 800px;
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    background-color: var(--white);
+}
+.left{
+    width: 50%;
+    padding: 38px;
+    
+}
+.right{
+    height: 500px;
+    width: 50%;
+    background-image: url('images/illustration-sign-up-desktop.svg');
+}
+li{
+    list-style-type: none;
+    padding: 8px 0px;
+}
+h1{
+    font-size: 4rem;
+}
+.inputfield input{
+
+    height: 50px;
+    width: 90%;
+
+}
+#btn{
+    width: 90%;
+    text-align: center;
+    height: 50px;
+    margin-top: 20px;
+    background-color: var(--DarkSlateGrey);
+    color: var(--white);
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+#btn:hover{
+    background-color: var(--orange);
+}
+.error{
+    color: red;
+}
+.success{
+    color: green;
+}
+
+.output{
+    background-color: var(--white);
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 35px;
+    margin-top: 80px;
+}
+.output img{
+    height: 50px;
+    width: 50px;
+   
+}
+.output  h1{
+    color: var(--DarkSlateGrey);
+
+}
+#btn2{
+    height: 60px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: var(--DarkSlateGrey);
+    color: var(--white);
+    border-radius: 8px;
+    cursor: pointer;
+}
+.hidden{
+    display: none;
+}
