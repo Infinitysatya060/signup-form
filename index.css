@@ -25,7 +25,7 @@ body{
 .right{
     height: 500px;
     width: 50%;
-    background-image: url('images/illustration-sign-up-desktop.svg');
+    background-image: url('illustration-sign-up-desktop.svg');
 }
 li{
     list-style-type: none;
